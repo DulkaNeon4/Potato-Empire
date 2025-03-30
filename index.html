@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+	
+	<title>Potato Empire</title>
+	
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link href="fonts/unicode/css/roboto.css" rel="stylesheet" type="text/css">
+	
+	<link href="css/game.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+	<script type="text/javascript" src="js/data.js"></script>
+</head>
+
+<body>
+	<div class="main-bg">
+	<div class="overlay">
+		<div class="game-content">
+			<div class="game-title">Potato map</div>
+			<div id="game-map"></div>
+			<div class="button" id="btNewGame">NEW GAME</div>
+		</div>
+		
+		<div class="info-content">
+			<div class="row">
+				<center>
+					<div class="season-info season-spring">
+						Spring:<br><span id="lblSeason0Score">0 points</span>
+					</div>
+					<div class="season-info season-summer">
+						Summer:<br><span id="lblSeason1Score">0 points</span>
+					</div>
+					<div class="season-info season-autumn">
+						Autumn:<br><span id="lblSeason2Score">0 points</span>
+					</div>
+					<div class="season-info season-winter">
+						Winter:<br><span id="lblSeason3Score">0 points</span>
+					</div>
+				</center>
+			</div>
+			
+			<div class="row">
+				<div class="info-total-point"><span id="lblTotalScore">Total: 0 points</span></div>
+			</div>
+			
+			<div class="row">
+				<div class="info-current-season">Current season: <span id="lblCurrentSeason"></span></div>
+			</div>
+			
+			<div class="row">
+				<div class="info-current-mission">
+					<div class="mission-title" style="margin-right: 5px;">
+						<strong id="lblMission0Title">Mission A:</strong>&nbsp;<span id="lblMission0Score">0 points</span>
+					</div>
+					<div class="mission-title">
+						<strong id="lblMission1Title">Mission B:</strong>&nbsp;<span id="lblMission1Score">0 points</span>
+					</div>
+					
+					<div class="mission" style="margin-right: 5px;" id="lblMission0Content"></div>
+					<div class="mission" id="lblMission1Content"></div>
+					
+					<div class="mission-title" style="margin-right: 5px;">
+						<strong id="lblMission2Title">Mission C:</strong>&nbsp;<span id="lblMission2Score">0 points</span>
+					</div>
+					<div class="mission-title">
+						<strong id="lblMission3Title">Mission D:</strong>&nbsp;<span id="lblMission3Score">0 points</span>
+					</div>
+					
+					<div class="mission" style="margin-right: 5px;" id="lblMission2Content"></div>
+					<div class="mission" id="lblMission3Content"></div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="info-current-time">Elapsed time in current season: <span id="lblCurrentTime">0</span>/7</div>
+			</div>
+			
+			<div class="row">
+				<div class="info-current-element">Current element:				
+					<div class="element">
+						<span id="lblElementTime"></span>
+						
+						<div class="element-cell" id="eCell00"></div>
+						<div class="element-cell" id="eCell01"></div>
+						<div class="element-cell" id="eCell02"></div>
+						<div class="element-cell" id="eCell10"></div>
+						<div class="element-cell" id="eCell11"></div>
+						<div class="element-cell" id="eCell12"></div>
+						<div class="element-cell" id="eCell20"></div>
+						<div class="element-cell" id="eCell21"></div>
+						<div class="element-cell" id="eCell22"></div>
+					</div>
+					
+					<button id="btRotate">Rotate</button>
+					<button id="btFlip">Flip</button>
+					<button id="btTest" onClick="Test();">Test</button>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<div id="ScoreDetail" class="overlay-black">
+		<div id="txtScore"></div>
+		<div class="button" id="btClose">CLOSE</div>
+	</div>
+	</div>
+</body>
+</html>

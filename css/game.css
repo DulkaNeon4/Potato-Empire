@@ -1,0 +1,365 @@
+/* CSS Document */
+
+html {
+	background-image: url("../images/bg.jpg");
+}
+
+.main-bg {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -360px;
+    margin-left: -532px;
+	
+	width: 1065px;
+	height: 720px;
+	display: block;
+	
+	border-radius: 20px;
+	background-image: url("../images/game-bg.jpg");
+	
+	box-shadow: 1px 5px 13px 3px rgba(0,0,0,0.56);
+	-webkit-box-shadow: 1px 5px 13px 3px rgba(0,0,0,0.56);
+	-moz-box-shadow: 1px 5px 13px 3px rgba(0,0,0,0.56);
+}
+
+.main-bg .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+	border-radius: 20px;
+	background-color: rgba(255,255,255,0.8);
+}
+
+.main-bg .overlay-black {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+	border-radius: 20px;
+	background-color: rgba(0,0,0,0.8);
+}
+
+.game-content {
+	width: 45%;
+	height: 100%;
+	padding: 100px 10px 20px 20px;
+	
+	padding: 10;
+	
+	float: left;
+	box-sizing: border-box;
+	display: block;
+}
+
+.game-title {
+	width: 100%;
+	height: auto;
+	
+	font-size: 18pt;
+	
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	
+	display: block;
+	float: left;
+}
+
+#game-map {
+	width: 429px;
+	height: auto;
+	
+	border: 5px solid #ffffff;
+	border-radius: 5px;
+	background-color: #ffffff;
+	
+	float: left;
+}
+
+.map-cell {
+	position: inherit;
+	width: 33px;
+	height: 33px;
+	margin: 1px;
+	
+	border: 2px solid #ffffff;
+	border-radius: 5px;
+	
+	background-color: #efe2b3;
+	background-repeat: no-repeat;
+	background-size: contain;
+	
+	float: left;
+	cursor: pointer;
+}
+
+/*-------------------------------------*/
+
+.info-content {
+	width: 55%;
+	height: 100%;
+	
+	padding: 40px 20px 0px 10px;
+	
+	float: left;
+	box-sizing: border-box;
+	display: block;
+}
+
+.info-content .row {
+	width: 100%;
+	height: auto;
+	
+	box-sizing: border-box;
+	
+	display: block;
+	float: left;	
+}
+
+.season-info {
+	position: inherit;
+	width: 100px;
+	height: 65px;
+	
+	padding: 5px;
+	margin-left: 3px;
+	margin-right: 3px;
+	
+	text-align: center;
+	line-height: 150%;
+	color: #ffffff;
+	border-radius: 10px;
+	
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.season-spring { border: 4px solid #538135; background-color: #70ad47; }
+.season-summer { border: 4px solid #bf9000; background-color: #ffc000; }
+.season-autumn { border: 4px solid #c55a11; background-color: #ed7d31; }
+.season-winter { border: 4px solid #2e75b5; background-color: #5b9bd5; }
+
+.info-total-point {
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+}
+
+.info-current-season {
+	width: 100%;
+	padding: 10px;
+	
+	font-weight: bold;
+	
+	margin-top: 10px;
+	border-bottom: 1px solid #000000;
+	
+	box-sizing: border-box;
+}
+
+.info-current-time {
+	width: 100%;
+	padding: 10px;
+	
+	font-weight: bold;
+	
+	border-bottom: 1px solid #000000;
+	
+	box-sizing: border-box;
+}
+
+.info-current-mission {
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+	
+	box-sizing: border-box;
+}
+
+.info-current-mission .mission-title {
+	width: 49.5%;
+	height: auto;
+	float: left;
+	margin-bottom: 3px;
+	padding-left: 15px;
+	box-sizing: border-box;
+}
+
+.info-current-mission .mission {
+	width: 49.5%;
+	height: 100px;
+	margin-bottom: 10px;
+	padding: 8px;
+	box-sizing: border-box;
+	
+	background-color: #363636;
+	border-radius: 10px;
+	float: left;
+	
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 6px center;
+	
+	padding-left: 95px;
+	font-size: 7pt;
+	color: #ffffff;
+	text-align: justify;
+}
+
+.info-current-mission .mission span {
+	font-size: 9pt;
+	font-weight: bold;
+}
+
+.info-current-element {
+	position: relative;
+	
+	width: 100%;
+	padding: 10px;
+	
+	font-weight: bold;
+	
+	margin-top: 20px;
+	
+	box-sizing: border-box;
+}
+
+.info-current-element .element {
+	position: absolute;
+	top: 0;
+	left: 280px;
+	
+	width: 150px;
+	height: 117px;
+	
+	border: 5px solid #ffffff;
+	border-radius: 10px;
+	
+	background-color: #ffffff;
+	background-image: url("../images/clock.png");
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	background-position: right top;
+}
+
+.info-current-element .element .element-cell {
+	position: relative;
+	width: 35px;
+	height: 35px;
+	margin: 1px;
+	
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	
+	background-color: #f0f0f0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	
+	float: left;
+}
+
+#lblElementTime {
+	position: inherit;
+	top: 25px;
+	left: 135px;
+	
+}
+
+.info-current-element button {
+	position: absolute;
+	top: 0;
+	left: 450px;
+	
+	width: 100px;
+	height: 35px;
+	
+	font-weight: bold;
+	background-color: #f3f3f3;
+	
+	border: 2px solid #cccccc;
+	border-radius: 10px;
+}
+
+.info-current-element button:hover {
+	background-color: #e5e5e5;
+	cursor: pointer;
+}
+
+.endgame {
+	color: #d17f3a;
+}
+
+#btFlip {
+	top: 42px;
+}
+
+.button {
+	margin-top: 20px;
+	width: 150px;
+	height: 80px;
+	background-image: url("../images/button.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	
+	color: #ffffff;
+	font-weight: bold;
+	line-height: 70px;
+	text-align: center;
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+	cursor: pointer;
+}
+
+.button:hover {
+	color: #fbe774;
+}
+
+#btNewGame {
+	float: left;
+}
+
+#ScoreDetail {
+	z-index: 999;
+	display: none;
+}
+
+#txtScore {
+	position: absolute;
+	width: 600px;
+	height: 500px;
+	top: 50%;
+    left: 50%;
+	margin-top: -250px;
+	margin-left: -300px;
+	
+	padding: 20px 20px 100px 20px;
+	line-height: 150%;
+	
+	background-color: #ffffff;
+	
+	border: 5px solid #70ad47;
+	border-radius: 20px;
+	box-sizing: border-box;
+	
+	overflow-x: hidden;
+	overflow-y: auto;
+	
+	box-shadow: 1px 5px 13px 3px rgba(0,0,0,0.56);
+	-webkit-box-shadow: 1px 5px 13px 3px rgba(0,0,0,0.56);
+	-moz-box-shadow: 1px 5px 13px 3px rgba(0,0,0,0.56);
+}
+
+#btClose {
+	position: absolute;
+	top: 500px;
+    left: 50%;
+	margin-left: -75px;
+}
+
+#btTest {
+	top: 84px;
+}
